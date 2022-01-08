@@ -1,4 +1,9 @@
 var currentDte = moment().format('LL');
 var date = document.getElementById("currentDay");
-date.textContent = currentDte;
+
+
+// Adding Current day to the page
+  $("#currentDay").text(currentDte);
+
+
 
