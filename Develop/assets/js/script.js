@@ -3,7 +3,7 @@ var currentDte = moment().format('LL');
 var date = document.getElementById("currentDay");
 var calTasks = [];
 
-
+// Adding items form local storage to page.
 $('#txt-input-8.description').val(localStorage.getItem('8'));
 $('#txt-input-9.description').val(localStorage.getItem('9'));
 $('#txt-input-10.description').val(localStorage.getItem('10'));
@@ -27,23 +27,15 @@ $(".saveBtn").on("click",function(event){
 var id = $(this).attr("id"); 
 var timeBlock = id.split("-")[2];
 var userInput = $(`#txt-input-${timeBlock}`).val();
-
-let calTask = {
-  id: $(this).attr("id"),
-  hour: timeBlock,
-   info: userInput
-}
-
-calTasks.push(calTask);
 localStorage.setItem(timeBlock, userInput);
 console.log(calTask);
 });
 
-
+// gettting current hour for iteration 
 var currentHour = moment().hours()
 
 for(let i = 8; i <= 17; i++) {
-
+// adding custom classes based on curent hour
   if(i< currentHour){
   $(`#txt-input-${i}`).addClass("past");
   }
