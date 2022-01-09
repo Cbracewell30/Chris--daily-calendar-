@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-foundation.min.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-foundation.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,98 +21,119 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  
+
   <div class="container">
-    <div class=" row">   
-      <div class=" hour col-md-2">
-           8 AM
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        8 AM
       </div>
-        <textarea cols="70" type="text" id="txt-input-8" class="description"></textarea>
-        <buton class="saveBtn col-md-2" id="save-btn-8" type="submit">Save
-          <span class="oi oi-check"></span>
-        </buton>
+      <textarea type="text" id="txt-input-8" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-8" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
     </div>
-      <div class=" row">   
-        <div class=" hour col-md-2">
-            9 AM
-        </div>
-          <textarea cols="70" type="text" id="txt-input-9" class="description"></textarea>
-          <buton class="saveBtn col-md-2" id="save-btn-9" type="submit">Save
-            <span class="oi oi-check"></span>
-          </buton>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        9 AM
       </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-          10 AM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-10" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-10" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-          11 AM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-11" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-11" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div> 
-        <div class=" row">   
-          <div class=" hour col-md-2">
-          12 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-12" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-12" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-           1 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-13" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-13" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-           2 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-14" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-14" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-            3 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-15" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-15" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-            4 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-16" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-16" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
-        <div class=" row">   
-          <div class=" hour col-md-2">
-            5 PM
-          </div>
-            <textarea cols="70" type="text" id="txt-input-17" class="description"></textarea>
-            <buton class="saveBtn col-md-2" id="save-btn-17" type="submit">Save
-              <span class="oi oi-check"></span>
-            </buton>
-        </div>
+      <textarea type="text" id="txt-input-9" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-9" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        10 AM
+      </div>
+      <textarea type="text" id="txt-input-10" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-10" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        11 AM
+      </div>
+      <textarea type="text" id="txt-input-11" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-11" type="submit"> Save  
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+     
+      </button> 
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        12 PM
+      </div>
+      <textarea type="text" id="txt-input-12" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-12" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        1 PM
+      </div>
+      <textarea type="text" id="txt-input-13" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-13" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        2 PM`
+      </div>
+      <textarea type="text" id="txt-input-14" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-14" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        3 PM
+      </div>
+      <textarea type="text" id="txt-input-15" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-15" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        4 PM
+      </div>
+      <textarea type="text" id="txt-input-16" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-16" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
+    <div class=" row row-cols-sm-1 row-cols-lg-3 row-cols-md-2">
+      <div class=" hour col time-block">
+        5 PM
+      </div>
+      <textarea type="text" id="txt-input-17" class="description col-8"></textarea>
+      <button class="saveBtn col" id="save-btn-17" type="submit">Save
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save-fill" viewBox="0 0 16 16">
+  <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v7.793L4.854 6.646a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l3.5-3.5a.5.5 0 0 0-.708-.708L8.5 9.293V1.5z"/>
+</svg>
+      </button>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
