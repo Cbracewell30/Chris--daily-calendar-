@@ -3,16 +3,19 @@ var currentDte = moment().format('LL');
 var date = document.getElementById("currentDay");
 var calTasks = [];
 
-function getCal (timeBlock,) {
-for(let i = 8; i < 17; i++) {
-var getStorage = JSON.parse(localStorage.getItem(timeBlock,calTasks));
 
-  if( i = timeBlock){
-    document.querySelector("#")
-  }
- console.log(); 
-  }
-};
+$('#txt-input-8.description').val(localStorage.getItem('8'));
+$('#txt-input-9.description').val(localStorage.getItem('9'));
+$('#txt-input-10.description').val(localStorage.getItem('10'));
+$('#txt-input-11.description').val(localStorage.getItem('11'));
+$('#txt-input-12.description').val(localStorage.getItem('12'));
+$('#txt-input-13.description').val(localStorage.getItem('13'));
+$('#txt-input-14.description').val(localStorage.getItem('14'));
+$('#txt-input-15.description').val(localStorage.getItem('15'));
+$('#txt-input-16.description').val(localStorage.getItem('16'));
+$('#txt-input-17.description').val(localStorage.getItem('17'));
+
+
 
 // Adding Current day to the page
   $("#currentDay").text(currentDte);
@@ -32,9 +35,8 @@ let calTask = {
 }
 
 calTasks.push(calTask);
-localStorage.setItem(timeBlock,JSON.stringify(calTasks));
+localStorage.setItem(timeBlock, userInput);
 console.log(calTask);
-//getCal(timeBlock,userInput)
 });
 
 
@@ -55,7 +57,3 @@ for(let i = 8; i <= 17; i++) {
   }
 };
 
-// getCal();
-
-// var inputLocal = localStorage.getItem(timeBlock,userInput);
-// document.getElementById(timeBlock);
