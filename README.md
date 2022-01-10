@@ -26,5 +26,5 @@ THEN the saved events persist
 Screenshot: 
 
 
-![image](![image](https://user-images.githubusercontent.com/93891189/148708907-5251a811-8252-4777-8473-0cbe7069a052.png))
+![image](![image](https://user-images.githubusercontent.com/93891189/148708907-5251a811-8252-4777-8473-0cbe7069a052.png)
 )
